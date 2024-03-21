@@ -1,2 +1,0 @@
-package oo_exerciselist;
-
