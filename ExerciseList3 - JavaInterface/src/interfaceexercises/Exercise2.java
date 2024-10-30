@@ -163,14 +163,11 @@ public class Exercise2 extends javax.swing.JFrame {
             resultMessage += "Machine won!";
         }
         JOptionPane.showMessageDialog(null, resultMessage, "Result Message", JOptionPane.INFORMATION_MESSAGE);
-
     }
 
     public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Exercise2().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Exercise2().setVisible(true);
         });
     }
 
